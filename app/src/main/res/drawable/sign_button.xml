@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="MissingDefaultResource">
+    <item android:state_pressed="true">
+
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval"
+            android:visible="true"
+            >
+            // to control the color
+            <gradient
+                android:startColor="@color/Broun"
+                android:endColor="@color/White"
+                android:angle="90"/>
+
+            //تحدب الشكل الاطراف
+            <corners  android:radius="180dp"/>
+
+            // كم تبعد الكلام بداخل الشكل عن كل زاويه
+            <padding
+                android:bottom="5pt"
+                android:left="6pt"
+                android:right="10pt"
+                android:top="8pt"/>
+
+            //الحافه بتاعه الشكل لون مختلف عن الشكل
+            <stroke  android:color="@android:color/darker_gray" android:width="3dp"/>
+
+
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle"
+            android:visible="true"
+            >
+            // to control the color
+            <gradient
+                android:startColor="@color/White"
+                android:endColor="@color/Broun"
+                android:angle="0"/>
+
+            //تحدب الشكل الاطراف
+            <corners  android:radius="60dp"/>
+
+            // كم تبعد الكلام بداخل الشكل عن كل زاويه
+            <padding
+                android:bottom="5pt"
+                android:left="6pt"
+                android:right="10pt"
+                android:top="8pt"/>
+
+            //الحافه بتاعه الشكل لون مختلف عن الشكل
+            <stroke  android:color="@android:color/black" android:width="2dp"/>
+
+
+        </shape>
+
+    </item>
+</selector>

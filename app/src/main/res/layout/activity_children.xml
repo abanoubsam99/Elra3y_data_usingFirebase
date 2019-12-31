@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChildrenActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView_father"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FATHER NAME "
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/Red"
+            android:textStyle="bold"
+            android:background="@color/Shafaf"
+            android:layout_marginBottom="10dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_children"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_below="@id/textView_father"
+            />
+
+        <!-- button tambah barang-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/tambah_Children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_person_add"
+            app:backgroundTint="#C401579B"
+            app:fabSize="auto" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

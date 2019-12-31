@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="Blue">#203DE0</color>
+    <color name="Red">#E20D0D</color>
+
+    <color name="Blue2">#01579b</color>
+
+    <color name="Shafaf">#B2FFFFFF</color>
+
+
+
+    <color name="Broun">#CED3811E</color>
+    <color name="White">#C9FFFFFF</color>
+
+</resources>
